@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx 
-        image: bhatuse2/nginx:0420fe5148894319cb574cdf6de957680de9b1f1
+        image: bhatuse2/nginx:9345a4d4951226c11eafcb5be193d3feae59660d
         ports:
         - containerPort: 80
