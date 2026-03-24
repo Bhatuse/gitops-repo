@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: autodeploy
+  labels:
+    app: nginx-sample-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-sample-app
+  template:
+    metadata:
+      labels:
+        app: nginx-sample-app
+    spec:
+      containers:
+      - name: nginx 
+        image: bhatuse2/nginx:716dd2f17b9ec642cb925a85cf7620f22393826c
+        ports:
+        - containerPort: 80
