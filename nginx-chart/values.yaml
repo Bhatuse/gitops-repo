@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: bhatuse2/nginx
   pullPolicy: IfNotPresent
-  tag: "e39872428386815ed89bb065ddf75892af4656bc"
+  tag: "v1"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -26,7 +26,6 @@ service:
   type: NodePort
   nodePort: 30888
   
-
 ingress:
   enabled: false
   className: ""
