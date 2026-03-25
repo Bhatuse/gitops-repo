@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: bhatuse2/nginx
+  tag: "dev"
+
+service:
+  type: NodePort
+  nodePort: 30081
+
+  

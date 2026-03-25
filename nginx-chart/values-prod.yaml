@@ -1,0 +1,9 @@
+replicaCount: 3
+
+image:
+  repository: bhatuse2/nginx
+  tag: "prod"
+
+service:
+  type: NodePort
+  nodePort: 30082
