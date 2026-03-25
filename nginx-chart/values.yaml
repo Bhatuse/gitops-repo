@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: bhatuse2/nginx
   pullPolicy: IfNotPresent
-  tag: "v1"
+  tag: "e39872428386815ed89bb065ddf75892af4656bc"
 
 imagePullSecrets: []
 nameOverride: ""
