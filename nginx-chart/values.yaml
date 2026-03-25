@@ -24,8 +24,10 @@ securityContext: {}
 
 service:
   type: NodePort
-  nodePort: 30888
-  
+  port: 80        # ClusterIP port (internal cluster access)
+  targetPort: 80  # Container internal port (what the app listens on)
+  nodePort: 30080 # External port on the node (outside access)
+
 ingress:
   enabled: false
   className: ""
