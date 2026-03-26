@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: bhatuse2/nginx
-  tag: "70ab4c08d793670fcdcbeb78af47cf8e3b07bdc2"
+  tag: "c766e331007f01755adf1bd3c867cc91fa3d17e5"
 
 service:
   type: NodePort
